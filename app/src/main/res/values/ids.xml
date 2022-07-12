@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sewa" type="id" />
+    <item name="bayar" type="id" />
+    <item name="logout" type="id" />
+    <item name="textdasboar" type="id" />
+    <item name="custumer" type="id" />
+    <item name="iv_logo" type="id" />
+    <item name="idsewa" type="id" />
+    <item name="id_etsewa" type="id" />
+    <item name="penyewa" type="id" />
+    <item name="id_etNamaCustomer" type="id" />
+    <item name="id_etNamamobil" type="id" />
+    <item name="lmsewa" type="id" />
+    <item name="id_etlamasewa" type="id" />
+    <item name="supir" type="id" />
+    <item name="checkBox1" type="id" />
+    <item name="checkBox2" type="id" />
+    <item name="simpan" type="id" />
+</resources>
