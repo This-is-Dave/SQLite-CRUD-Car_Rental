@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.InputSewa">
         <activity
-            android:name=".mobilInput"
+            android:name=".mobil"
             android:exported="false" />
         <activity
-            android:name=".costInput"
+            android:name=".cost"
             android:exported="false" />
         <activity
             android:name=".sewa"

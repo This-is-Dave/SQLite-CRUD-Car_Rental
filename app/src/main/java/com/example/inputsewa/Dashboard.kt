@@ -36,11 +36,11 @@ class Dashboard : AppCompatActivity(), View.OnClickListener {
                 startActivity(intentBiasa1)
             }
             R.id.btn_customer -> {
-                val intentBiasa2 = Intent(this@Dashboard, costInput::class.java)
+                val intentBiasa2 = Intent(this@Dashboard, cost::class.java)
                 startActivity(intentBiasa2)
             }
             R.id.mobil -> {
-                val intentBiasa3 = Intent(this@Dashboard, mobilInput::class.java)
+                val intentBiasa3 = Intent(this@Dashboard, mobil::class.java)
                 startActivity(intentBiasa3)
             }
         }

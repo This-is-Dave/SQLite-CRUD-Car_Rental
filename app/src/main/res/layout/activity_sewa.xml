@@ -1,193 +1,173 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
     tools:context=".sewa">
 
     <TextView
+        android:id="@+id/tvLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingLeft="130dp"
-        android:paddingTop="70dp"
+        android:layout_gravity="center"
         android:text="Input Sewa"
         android:textSize="30dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints" />
+        android:textStyle="bold"/>
 
     <ImageView
-        android:id="@+id/iv_logo"
+        android:id="@+id/ivLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
         android:src="@drawable/ic_baseline_people_outline_24"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/tvLogo" />
 
-    <TextView
-        android:id="@+id/penyewa"
+    <LinearLayout
+        android:id="@+id/isiSewa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="20dp"
-        android:text="Penyewa      :    "
-        android:textSize="20dp"
-        android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@id/iv_logo"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="283dp" />
-
-    <EditText
-        android:id="@+id/id_etNamaCustomer"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
         android:layout_marginEnd="20dp"
-        android:autofillHints=""
-        android:drawablePadding="10dp"
-        android:hint="Nama Customer"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        app:layout_constraintTop_toBottomOf="@id/iv_logo"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="201dp" />
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo">
 
-    <TextView
-        android:id="@+id/mobil"
+        <LinearLayout
+            android:id="@+id/LLpenyewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/penyewa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penyewa      :    "
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPenyewa"
+                android:layout_width="244dp"
+                android:layout_height="42dp"
+                android:autofillHints=""
+                android:drawablePadding="10dp"
+                android:hint="Nama Customer"
+                android:inputType="textEmailAddress"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLmobil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/mobil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobil            :    "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp "/>
+
+        <EditText
+            android:id="@+id/etMobil"
+            android:layout_width="244dp"
+            android:layout_height="42dp"
+            android:autofillHints=""
+            android:drawablePadding="10dp"
+            android:hint="Nama Mobil"
+            android:inputType="textEmailAddress"
+            android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLlamasewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/sewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lama Sewa  :    "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etLamasewa"
+            android:layout_width="244dp"
+            android:layout_height="42dp"
+            android:hint="waktu sewa/hari "
+            android:textSize="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LLbiaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:id="@+id/biaya"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Biaya             :    "
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etBiaya"
+            android:layout_width="244dp"
+            android:layout_height="42dp"
+            android:hint="Total Biaya Sewa"
+            android:textSize="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:paddingLeft="20dp"
-        android:text="Mobil            :    "
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/penyewa"
-        tools:layout_editor_absoluteX="0dp "/>
+        android:layout_gravity="center"
+        android:orientation="horizontal">
 
-    <EditText
-        android:id="@+id/id_etNamamobil"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
-        android:autofillHints=""
-        android:drawablePadding="10dp"
-        android:hint="Nama Mobil"
-        android:inputType="textEmailAddress"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/id_etNamaCustomer" />
+        <Button
+            android:id="@+id/tambah"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Insert"
+            android:textSize="15dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/lmsewa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:paddingLeft="20dp"
-        android:text="Lama Sewa  :    "
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/mobil"
-        tools:layout_editor_absoluteX="0dp"/>
-
-    <EditText
-        android:id="@+id/id_etlamasewa"
-        android:layout_width="244dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
-        android:autofillHints=""
-        android:drawablePadding="10dp"
-        android:hint="waktu sewa/hari "
-        android:ems="10"
-        android:inputType="time"
-        android:minHeight="48dp"
-        android:padding="10dp"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/id_etNamamobil"/>
-
-    <TextView
-        android:id="@+id/supir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="150dp"
-        android:text="Supir             :    "
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/lmsewa"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:paddingRight="90dp"
-        android:text="Iya"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/id_etlamasewa"
-        app:layout_constraintEnd_toEndOf="@+id/supir"
-        tools:layout_editor_absoluteX="158dp" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="Tidak"
-        android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/id_etlamasewa"
-        app:layout_constraintEnd_toEndOf="@+id/checkBox1"
-        tools:layout_editor_absoluteX="158dp" />
-
-
+        <Button
+            android:id="@+id/update"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textSize="15dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold" />
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btn_simpan_sewa"
+        android:id="@+id/view"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="156dp"
-
-        android:layout_marginBottom="184dp"
-        android:text="Insert"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_view_sewa"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-
-        android:layout_marginBottom="184dp"
         android:text="View"
         android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_gravity="center"
+        android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/btn_hapus_sewa"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="280dp"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_sewa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view" />
 
-        android:layout_marginBottom="184dp"
-        android:text="Hapus"
-        android:textSize="15dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

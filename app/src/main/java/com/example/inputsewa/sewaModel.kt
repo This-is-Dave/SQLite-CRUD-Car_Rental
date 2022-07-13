@@ -6,10 +6,9 @@ data class sewaModel(
     var id:Int = getAutoId(),
     var penyewa: String = "",
     var mobil: String = "",
-    var lamasewa: String = ""
-) {
+    var lamasewa: String = "",
+    var biaya: String = "") {
     companion object {
-
         fun getAutoId(): Int {
             val random = Random()
             return random.nextInt(100)

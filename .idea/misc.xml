@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/activity_costumer.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/activity_daftar_mobil.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/activity_dashboard.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/activity_main.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/activity_sewa.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/card_costumer.xml" value="0.19746376811594202" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/card_sewa.xml" value="0.1" />
+        <entry key="..\:/Users/ACER/AndroidStudioProjects/Kotlin/Work/AndroidStudioProjects/AndroidStudioProjects/app/src/main/res/layout/item_mobil.xml" value="0.19746376811594202" />
         <entry key="..\:/Users/REDMIBOOK/Downloads/dzaki/dapit/AndroidStudioProjects/app/src/main/res/layout-w936dp/card_costumer.xml" value="0.4" />
         <entry key="..\:/Users/REDMIBOOK/Downloads/dzaki/dapit/AndroidStudioProjects/app/src/main/res/layout-w936dp/costumer.xml" value="0.1" />
         <entry key="..\:/Users/REDMIBOOK/Downloads/dzaki/dapit/AndroidStudioProjects/app/src/main/res/layout-w936dp/template_recycle_card.xml" value="0.1" />
