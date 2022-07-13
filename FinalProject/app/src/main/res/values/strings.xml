@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">FinalProject</string>
-    <string name="log_in">Log In</string>
-    <string name="masukan_username_email">Masukan Username/Email</string>
-    <string name="todo">TODO</string>
-    <string name="masukan_password">Masukan Password</string>
-</resources>
